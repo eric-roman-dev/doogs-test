@@ -1,0 +1,14 @@
+{
+    "endOfLine": "auto",
+    "htmlWhitespaceSensitivity": "css",
+    "jsxBracketSameLine": false,
+    "jsxSingleQuote": false,
+    "proseWrap": "preserve",
+    "tabWidth": 4,
+    "useTabs": false,
+    "trailingComma": "es5",
+    "bracketSpacing": false,
+    "singleQuote": true,
+    "arrowParens": "always",
+    "printWidth": 80
+}

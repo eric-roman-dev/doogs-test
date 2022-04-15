@@ -1,1 +1,198 @@
 /* You can add global styles to this file, and also import other style files */
+//font
+@import url(//db.onlinewebfonts.com/c/b158925a1d762313849f2482a415369d?family=Eina03-SemiBold);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import 'variables.scss';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+// tools
+
+html {
+    font-family: $fontEina03-SemiBold;
+}
+
+body,
+main {
+    background-color: $couleur_claire2;
+}
+
+header,
+footer {
+    background-color: $couleur_claire;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    .taille_page {
+        width: $largeur_page;
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+header {
+    color: $couleur_fonce;
+    h1 {
+        display: inline-block;
+        font-size: 22px;
+        line-height: 60px;
+        margin-right: 18px;
+    }
+
+    .bouton_menu {
+        display: inline-block;
+        margin: 15px 8px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: $couleur_fonce2;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 8px;
+        width: max-content;
+        text-decoration: none;
+        &:hover {
+            color: $m-blue;
+            background-color: $b-blue;
+        }
+        .icone {
+            width: 14px;
+            height: 14px;
+            fill: $couleur_fonce2;
+            display: inline-block;
+            margin: 8px 4px 0 0;
+            vertical-align: sub;
+        }
+    }
+    .actif {
+        color: $m-blue;
+        background-color: $b-blue;
+        .icone {
+            fill: $m-blue;
+        }
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    .resultat {
+        width: $largeur_page;
+        background-color: $couleur_claire;
+        border: 1px solid $couleur_claire3;
+        border-radius: 4px;
+        margin: 32px 0;
+    }
+    .filtre {
+        background-color: $couleur_claire;
+        min-height: 60px;
+        padding-top: 16px;
+        nz-select,
+        .recherche,
+        .ant-input {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+        }
+        nz-select {
+            width: 100%;
+        }
+        .recherche {
+            padding: 0 0 0 16px;
+        }
+        .groupe {
+            padding: 0 16px;
+        }
+    }
+    .groupe {
+        padding: 2px 0 2px 16px;
+        margin: 0;
+    }
+    .card {
+        border: 1px solid $couleur_claire3;
+        padding: 16px;
+        p,
+        h6 {
+            margin: 0;
+            padding: 0;
+        }
+        h6 {
+            font-family: $fontEina03-SemiBold;
+            font-size: 14px;
+            line-height: 16.8px;
+            padding: 0;
+        }
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 12px;
+            line-height: 16.8px;
+            font-weight: 400;
+            padding: 0;
+            color: $couleur_grise;
+            font-style: normal;
+        }
+        .groupe {
+            padding: 2px 12px;
+            border-radius: 16px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        &:hover {
+            background-color: $couleur_claire2;
+        }
+        &:active {
+            border-color: $m-blue;
+            background-color: $b-blue;
+        }
+    }
+}
+
+footer {
+    .bouton {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: $couleur_claire;
+        background-color: $m-blue;
+        border-radius: 4px;
+        padding: 9px 12px;
+        display: inline-block;
+    }
+    .taille_page {
+        align-items: center;
+        justify-content: right;
+    }
+}
+
+.m-pink {
+    color: $m-pink !important;
+    background-color: $b-pink !important;
+}
+.m-purple {
+    color: $m-purple !important;
+    background-color: $b-purple !important;
+}
+.m-blue {
+    color: $m-blue !important;
+    background-color: $b-blue !important;
+}
+.m-red {
+    color: $m-red !important;
+    background-color: $b-red !important;
+}
+.m-green {
+    color: $m-green !important;
+    background-color: $b-green !important;
+}
+.m-default {
+    color: $m-default !important;
+    background-color: $b-default !important;
+}
+
+.ant-select-item-option-content {
+    line-height: 16.5px;
+    font-size: 12px;
+}
