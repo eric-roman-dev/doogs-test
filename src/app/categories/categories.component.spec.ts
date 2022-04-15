@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { CategorieService } from '../_services/categorie.service';
 
 import { CategoriesComponent } from './categories.component';
 
@@ -22,4 +23,7 @@ describe('CategoriesComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });
+
+
